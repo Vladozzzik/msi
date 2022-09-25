@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>MSI 2020</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left_search">
+        <p>MSI 2020</p>
+        <p>Hey!</p>
+        <p>Let’s try to find a joke for you:</p>
+        <div class="radio">
+          <div class="radio_input">
+            <input type="radio" id="random" name="caterogies" value="random" />
+            <label for="random">Random</label>
+          </div>
+          <div class="radio_input">
+            <input
+              type="radio"
+              id="caterogies"
+              name="caterogies"
+              value="caterogies"
+            />
+            <label for="caterogies">From caterogies</label>
+          </div>
+          <div class="categ_caterogies display">
+            <input
+              type="radio"
+              id="animal"
+              name="caterogiesfrom"
+              value="Animal"
+            />
+            <label for="animal">Animal</label>
+            <input
+              type="radio"
+              id="career"
+              name="caterogiesfrom"
+              value="Career"
+            />
+            <label for="career">Career</label>
+            <input
+              type="radio"
+              id="celebrity"
+              name="caterogiesfrom"
+              value="Celebrity"
+            />
+            <label for="celebrity">Celebrity</label>
+            <input type="radio" id="dev" name="caterogiesfrom" value="Dev" />
+            <label for="dev">Dev</label>
+          </div>
+          <div class="radio_input">
+            <input type="radio" id="Search" name="caterogies" value="Search" />
+            <label for="Search">Search</label></br>
+            <input type="text" class="input_search display" placeholder="Free text search..." pattern="^[a-zA-Z\s]+$">
+          </div>
+        </div>
+        <button class="get">Get a joke</button>
+        <div class="content">
+        </div>
+      </div>
+      <div class="right_favorites">
+        <h3>Favourite</h3>
+        <div class="right_favorites_content" ></div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
